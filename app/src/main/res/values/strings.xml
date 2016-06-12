@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Maine Audubon Bird Songs</string>
+
+    <string name="start_game">Learn Bird Sounds</string>
+    <string name="main_screen_text">Maine\nAudubon\nBird\nSongs</string>
+
+    <string name="title_activity_learn_bird_sound">Learn Bird Sounds</string>
+</resources>
