@@ -14,6 +14,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.media.MediaPlayer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
@@ -88,6 +91,8 @@ public class LearnBirdSound extends AppCompatActivity {
             return false;
         }
     };
+    ArrayList<MediaPlayer> mpl = new ArrayList<MediaPlayer>();
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,23 +101,46 @@ public class LearnBirdSound extends AppCompatActivity {
         setContentView(R.layout.activity_learn_bird_sound);
 
         ImageButton one = (ImageButton) this.findViewById(R.id.button6);
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.warbler_chestnut_sided);
+        final MediaPlayer mp1 = MediaPlayer.create(this, R.raw.warbler_chestnut_sided);
+        mpl.add(mp1);
         one.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View v) {
-                mp.start();
+                for (MediaPlayer mp:mpl)
+                {
+                    if(mp.isPlaying()){ mp.pause(); }
+                }
+                mp1.start();
             }
         });
 
         ImageButton two = (ImageButton) this.findViewById(R.id.button7);
         final MediaPlayer mp2 = MediaPlayer.create(this, R.raw.creeper_brown);
+        mpl.add(mp2);
         two.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View v) {
+                for (MediaPlayer mp:mpl)
+                {
+                    if(mp.isPlaying()){ mp.pause(); }
+                }
                 mp2.start();
             }
         });
 
+        ImageButton three = (ImageButton) this.findViewById(R.id.button9);
+        final MediaPlayer mp3 = MediaPlayer.create(this, R.raw.chickadee_boreal);
+        mpl.add(mp3);
+        three.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v) {
+                for (MediaPlayer mp:mpl)
+                {
+                    if(mp.isPlaying()){ mp.pause(); }
+                }
+                mp3.start();
+            }
+        });
 
     }
 

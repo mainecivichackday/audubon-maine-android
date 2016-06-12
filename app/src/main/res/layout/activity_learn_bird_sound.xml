@@ -30,7 +30,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="200dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/warbler_chestnut_sided"
+                android:src="@drawable/chickadee"
                 android:text="" />
         </LinearLayout>
     </ScrollView>
