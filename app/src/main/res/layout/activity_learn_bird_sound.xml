@@ -4,54 +4,34 @@
     android:layout_height="match_parent"
     android:background="#0099cc"
     tools:context="birdgame.maineaudubon.LearnBirdSound">
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:orientation="vertical">
             <ImageButton
-                android:text=""
-                android:src="@drawable/warbler_chestnut_sided"
-                android:scaleType="fitCenter"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
                 android:id="@+id/button6"
-                android:layout_weight="1" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-            <ImageButton
-                android:text=""
-                android:src="@drawable/creeper_brown"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
                 android:scaleType="fitCenter"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:id="@+id/button7"
-                android:layout_weight="1" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-            <ImageButton
-                android:text=""
                 android:src="@drawable/warbler_chestnut_sided"
+                android:text="" />
+            <ImageButton
+                android:id="@+id/button7"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
                 android:scaleType="fitCenter"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:src="@drawable/creeper_brown"
+                android:text="" />
+            <ImageButton
                 android:id="@+id/button9"
-                android:layout_weight="1" />
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/warbler_chestnut_sided"
+                android:text="" />
         </LinearLayout>
-    </LinearLayout>
-
+    </ScrollView>
 </RelativeLayout>
