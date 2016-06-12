@@ -104,6 +104,15 @@ public class LearnBirdSound extends AppCompatActivity {
             }
         });
 
+        ImageButton two = (ImageButton) this.findViewById(R.id.button7);
+        final MediaPlayer mp2 = MediaPlayer.create(this, R.raw.creeper_brown);
+        two.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v) {
+                mp2.start();
+            }
+        });
+
 
     }
 

@@ -31,7 +31,7 @@
             android:layout_weight="1">
             <ImageButton
                 android:text=""
-                android:src="@drawable/warbler_chestnut_sided"
+                android:src="@drawable/creeper_brown"
                 android:scaleType="fitCenter"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
