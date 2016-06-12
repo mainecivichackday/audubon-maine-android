@@ -103,28 +103,8 @@ public class LearnBirdSound extends AppCompatActivity {
                 mp.start();
             }
         });
-        //ActionBar actionBar = getSupportActionBar();
-        //if (actionBar != null) {
-        //    actionBar.setDisplayHomeAsUpEnabled(true);
-        //}
-
-        //mVisible = true;
-        //mControlsView = findViewById(R.id.fullscreen_content_controls);
-        //mContentView = findViewById(R.id.fullscreen_content);
 
 
-        // Set up the user interaction to manually show or hide the system UI.
-        //mContentView.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View view) {
-        //        toggle();
-        //    }
-        //});
-
-        // Upon interacting with UI controls, delay any scheduled hide()
-        // operations to prevent the jarring behavior of controls going away
-        // while interacting with the UI.
-        //findViewById(R.id.button5).setOnTouchListener(mDelayHideTouchListener);
     }
 
     @Override
@@ -134,7 +114,7 @@ public class LearnBirdSound extends AppCompatActivity {
         // Trigger the initial hide() shortly after the activity has been
         // created, to briefly hint to the user that UI controls
         // are available.
-        delayedHide(100);
+        //delayedHide(100);
     }
 
     @Override
@@ -158,10 +138,10 @@ public class LearnBirdSound extends AppCompatActivity {
 
     private void hide() {
         // Hide UI first
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.hide();
-        }
+        //ActionBar actionBar = getSupportActionBar();
+        //if (actionBar != null) {
+            //actionBar.hide();
+        //}
         //mControlsView.setVisibility(View.GONE);
         //mVisible = false;
 

@@ -83,15 +83,6 @@ public class MainActivity extends AppCompatActivity {
             Intent myIntent = new Intent(getApplicationContext(), LearnBirdSound.class);
             myIntent.putExtra("key", value); //Optional parameters
             startActivity(myIntent);
-
-            //Context context = getApplicationContext();
-            //int duration = Toast.LENGTH_SHORT;
-
-            //Toast toast = Toast.makeText(context, "Clicked!",duration);
-            //toast.show();
-            //if (AUTO_HIDE) {
-            //    delayedHide(AUTO_HIDE_DELAY_MILLIS);
-            //}
             return false;
         }
     };
@@ -128,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         // Trigger the initial hide() shortly after the activity has been
         // created, to briefly hint to the user that UI controls
         // are available.
-        delayedHide(100);
+        //delayedHide(100);
     }
 
     private void toggle() {
